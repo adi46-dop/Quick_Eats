@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MenuBottomSheetFragment">
+
+    <View
+        android:layout_width="32dp"
+        android:layout_height="4dp"
+        android:background="@color/light_red"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnBackMenu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefinsansbold"
+        android:text="Cart"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:id="@+id/recyclerViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
